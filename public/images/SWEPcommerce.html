@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:8000/signup -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>SWEPcommerce</title>
+    <link rel="stylesheet" href="./SWEPcommerce_files/style.css">
+    <link rel="stylesheet" href="./SWEPcommerce_files/style.css">
+    <link rel="stylesheet" href="./SWEPcommerce_files/style.css">
+    <script type="text/javascript">
+        function navLeft(){
+
+            //get element and store as variable
+            var slider = document.getElementById("slider-img");
+
+            if(slider.getAttribute("src") == "images/1.jpg"){
+                slider.setAttribute("src", "images/2.jpg");
+            }else if(slider.getAttribute("src") == "images/2.jpg"){
+                slider.setAttribute("src", "images/3.jpg");
+            }else if(slider.getAttribute("src") == "images/3.jpg"){
+                slider.setAttribute("src", "images/4.jpg");
+            }else{
+                slider.setAttribute("src", "images/1.jpg")
+            }
+        }
+        function navRight(){
+
+            //get element and store as variable
+            var slider = document.getElementById("slider-img");
+
+            if(slider.getAttribute("src") == "images/4.jpg"){
+                slider.setAttribute("src", "images/3.jpg");
+            }else if(slider.getAttribute("src") == "images/3.jpg"){
+                slider.setAttribute("src", "images/2.jpg");
+            }else if(slider.getAttribute("src") == "images/2.jpg"){
+                slider.setAttribute("src", "images/1.jpg");
+            }else{
+                slider.setAttribute("src", "images/4.jpg")
+            }		}
+    </script>
+</head>
+<body>
+<header><!-- Header section -->
+
+    <div class="sub-header">
+        <div id="logo-bar">
+            <img src="./SWEPcommerce_files/slogo.png">
+        </div>
+        <div class="menu-bar-2">
+            <a href="http://localhost:8000/" class="menuu menuu1">Home</a>
+            <a href="http://localhost:8000/products" class="menuu menuu2">Products</a>
+            <a href="http://localhost:8000/faq" class="menuu menuu3">FAQ</a>
+                            <a href="http://localhost:8000/login" class="menuu menuu4">Login</a>
+                <a href="http://localhost:8000/signup" class="menuu menuu5">Sign up</a>
+                                </div>
+    </div>
+
+    <div id="search-bar">
+        <form method="POST" action="http://localhost:8000/search" accept-charset="UTF-8"><input name="_token" type="hidden" value="mOuVfhrVntOWVQKXeA1FbXUdjzAz6GkAy9Zbd4Ct">
+            <input class="searchText" placeholder="Tags Separated By Space" name="tags" type="text">
+            <input type="submit" value="Search">
+        </form>
+
+        
+            
+            
+        
+        <!--input type="text" name="searchLocation"-->
+    </div>
+</header>
+
+    <!-- Notifications -->
+        <section class="session-frame">
+        <div class="login-div">
+            <form method="POST" action="http://localhost:8000/user/signup" accept-charset="UTF-8"><input name="_token" type="hidden" value="mOuVfhrVntOWVQKXeA1FbXUdjzAz6GkAy9Zbd4Ct">
+                <input class="login" placeholder="Full Name" name="name" type="text">
+                <input class="login" placeholder="Email" name="email" type="email">
+                <input class="login" placeholder="Phone No" name="phone" type="text">
+                <input class="login" placeholder="Alternative Phone No" name="alt_phone" type="text">
+                <input class="login" placeholder="Address" name="address" type="text">
+                <input class="login" placeholder="Choose Username" name="username" type="text">
+                <input placeholder="Password" name="password" type="password" value="">
+                <input placeholder="Retype Password" name="password2" type="password" value="">
+                <input type="submit" value="Create Account">
+            </form>
+            <hr><!-- Signup Section -->
+
+            <a href="http://localhost:8000/signup"><span class="account-help-text">Already Have an Account?</span></a>
+            <a href="http://localhost:8000/login"><input type="submit" value="Login"></a>
+        </div>
+
+    </section>
+
+
+
+<!-- Footer Sectio -->
+<footer>
+    <div class="footer-row-1 footer-row">
+        <!--span class="footer-logo">SWEPcommerce</span-->
+        <div class="footer-logo-light">
+            <img src="./SWEPcommerce_files/logo.png">
+        </div>
+        <div class="social-icon fb"> f</div>
+        <div class="social-icon tw"> t</div>
+        <div class="social-icon yt"> v</div>
+    </div>
+    <div class="footer-row-2 footer-row">
+        <span class="footer-left">All Rights Reserved (c) SWEPcommerce 2017</span>
+        <span class="footer-right"><a href="http://localhost:8000/signup">Customer Support</a></span>
+    </div>
+</footer>
+
+
+</body></html>
